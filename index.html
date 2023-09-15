@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog API</title>
+    <title>Dog Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Random Dog Image</h1>
-    <button id="getDogButton">Get Dog Image</button>
-    <div id="dogImageContainer">
-        <img id="dogImage" src="" alt="Random Dog">
-    </div>
+<div class="filters">
+    <label for="breedSelect">Filter by Breed:</label>
+    <select id="breedSelect">
+        <option value="">All Breeds</option>
+    </select>
+</div>
+<div class="gallery"></div>
 
-    <script src="script.js"></script>
+<!-- Das Overlay für das Vollbildbild -->
+<div id="fullscreenOverlay" class="fullscreen-overlay">
+    <img id="fullscreenImage" class="fullscreen-image" src="" alt="Fullscreen Dog">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
